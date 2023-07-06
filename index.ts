@@ -4,7 +4,6 @@ import { Moeban } from "@bunland/moeban";
 // Model
 const users = new Moeban("example.json", "users");
 
-
 // Server and EndPoints!!
 serve({
   async fetch(request) {
