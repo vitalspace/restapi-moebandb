@@ -1,5 +1,11 @@
 {
-  "users": [],
+  "users": [
+    {
+      "id": 1,
+      "name": "lisa",
+      "email": "lisa@mail.com"
+    }
+  ],
   "othres": [
     {
       "id": 1,
