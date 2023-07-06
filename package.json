@@ -1,0 +1,14 @@
+{
+  "name": "restapi-moebandb",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@bunland/moeban": "^1.0.5"
+  }
+}

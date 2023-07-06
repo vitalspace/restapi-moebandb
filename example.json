@@ -1,0 +1,15 @@
+{
+  "users": [],
+  "othres": [
+    {
+      "id": 1,
+      "name": "book",
+      "title": "The face book"
+    },
+    {
+      "id": 2,
+      "name": "laura",
+      "email": "laura@gmail.com"
+    }
+  ]
+}
