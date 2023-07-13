@@ -3,19 +3,8 @@
     {
       "id": 1,
       "name": "lisa",
-      "email": "lisa@mail.com"
-    }
-  ],
-  "othres": [
-    {
-      "id": 1,
-      "name": "book",
-      "title": "The face book"
-    },
-    {
-      "id": 2,
-      "name": "laura",
-      "email": "laura@gmail.com"
+      "email": "lisa@mail.com",
+      "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, alias."
     }
   ]
 }
