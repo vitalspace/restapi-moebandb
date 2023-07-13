@@ -3,7 +3,29 @@
     {
       "id": 1,
       "name": "lisa",
+      "img": "https://www.svgrepo.com/show/525589/user-rounded.svg",
       "email": "lisa@mail.com",
+      "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, alias."
+    },
+    {
+      "id": 2,
+      "name": "Lucas",
+      "img": "https://www.svgrepo.com/show/525589/user-rounded.svg",
+      "email": "lucas@mail.com",
+      "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, alias."
+    },
+    {
+      "id": 3,
+      "name": "Ana",
+      "img": "https://www.svgrepo.com/show/525589/user-rounded.svg",
+      "email": "ana@gmail.com",
+      "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, alias."
+    },
+    {
+      "id": 4,
+      "name": "kar",
+      "img": "https://www.svgrepo.com/show/525589/user-rounded.svg",
+      "email": "kar@gmail.com",
       "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, alias."
     }
   ]

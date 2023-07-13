@@ -22,7 +22,10 @@ serve({
 
     if (pathname === "/api/createuser" && method === "POST") {
       const body: object = await request.json();
-      await users.write(body);
+      const usersList = await users.find();
+      //@ts-ignore
+      const id = usersList.length + 1;
+      await users.write({ id, ...body });
       return new Response(JSON.stringify(await users.find()), {
         status: 200,
         headers: {
