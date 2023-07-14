@@ -21,8 +21,8 @@ serve({
     }
 
     if (pathname === "/api/createuser" && method === "POST") {
-      const body: object = await request.json();
       const usersList = await users.find();
+      const body: object = await request.json();
       //@ts-ignore
       const id = usersList.length + 1;
       await users.write({ id, ...body });
@@ -48,14 +48,15 @@ serve({
       });
     }
 
-    if (pathname === "/api/deleteuser" && method === "DELETE") {
+    if (pathname === "/api/deleteuser" && method === "POST") {
+
       type User = { id: string };
       const body: User = await request.json();
 
       try {
         await users.removeOne("id", body.id);
         return new Response(
-          JSON.stringify({ message: `The user ${body.id} was removed` }),
+          JSON.stringify(await users.find()),
           {
             status: 200,
             headers: {
@@ -72,7 +73,10 @@ serve({
         );
       }
     }
+
     return new Response(`404!`);
   },
   port: 3000,
 });
+
+console.log("Sever on port 3000")
