@@ -1,5 +1,6 @@
 import { serve } from "bun";
 import { Moeban } from "@bunland/moeban";
+import { uuidv4 } from "./uuid";
 
 // Model
 const users = new Moeban("example.json", "users");
@@ -21,11 +22,8 @@ serve({
     }
 
     if (pathname === "/api/createuser" && method === "POST") {
-      const usersList = await users.find();
       const body: object = await request.json();
-      //@ts-ignore
-      const id = usersList.length + 1;
-      await users.write({ id, ...body });
+      await users.write({ id: uuidv4(), ...body });
       return new Response(JSON.stringify(await users.find()), {
         status: 200,
         headers: {
